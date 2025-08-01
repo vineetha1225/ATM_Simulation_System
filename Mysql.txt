@@ -1,0 +1,14 @@
+﻿USE ATM;
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    pin VARCHAR(4) NOT NULL,
+    balance DECIMAL(10, 2) NOT NULL
+)
+
+
+INSERT INTO users (username, pin, balance) VALUES ('vineetha', '1234', 1000.00);
+INSERT INTO users (username, pin, balance) VALUES ('indu', '4321', 2000.00);
+INSERT INTO users (username, pin, balance) VALUES ('mahitha', '5678', 2000.00);
