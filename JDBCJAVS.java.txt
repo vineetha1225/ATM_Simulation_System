@@ -1,0 +1,27 @@
+﻿import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+class ATM {
+   public static void main(String[] args) {
+       String url = "jdbc:mysql://127.0.0.1:3306/ATM";
+       String user = "root";
+       String password = "vineetha";
+
+
+       try {
+           // Load the MySQL JDBC driver
+           Class.forName("com.mysql.cj.jdbc.Driver");
+           // Establish the connection
+           Connection conn = DriverManager.getConnection(url, user, password);
+           System.out.println("Connection established successfully!");
+       } catch (ClassNotFoundException e) {
+           System.out.println("MySQL JDBC Driver not found.");
+           e.printStackTrace();
+       } catch (SQLException e) {
+           System.out.println("Connection failed: " + e.getMessage());
+           e.printStackTrace();
+       }
+   }
+}
