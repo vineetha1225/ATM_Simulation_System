@@ -1,4 +1,4 @@
-# ATM Simulation 
+# ATM Simulation System
 A desktop-based banking simulation project that mimics real ATM operations such as user authentication, cash withdrawal, balance inquiry, and transaction history. Built using Java with a graphical interface designed using AWT (Abstract Window Toolkit) and a MySQL database connected via JDBC for backend operations.
 
 ## Key Features: ##
